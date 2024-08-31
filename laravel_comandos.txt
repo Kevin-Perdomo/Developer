@@ -1,0 +1,43 @@
+#Laravel-web_Site: https://laravel.com/
+
+#Criando um projeto laravel completo com Docker:
+//example-app pode ser qualquer nome_do_projeto
+curl -s https://laravel.build/example-app | bash                            
+cd example-app 
+
+//subindo os containers
+./vendor/bin/sail up 
+
+//criando as tabelas do banco de dados
+./vendor/bin/sail artisan migrate 
+
+#Criando um Alias para rodar comandos sail:
+ls -la
+sudo nano .bachrc
+// copiar o comando abaixo, colar e salvar dentro do arquivo.bachrc
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+or
+alias sail='bash $PWD/vendor/bin/sail'
+
+#Testando o servidor Apache (para evitar conflitos)
+sudo lsof -i :80
+sudo service apache2 stop
+
+#Testando o Alias:
+sail --help
+sail up
+sail up -d
+sail stop   // Para os contêineres, mas mantém o estado, redes e volumes.
+sail down   //Para os contêineres e remove as redes, volumes e outros recursos associados.
+
+#Testando Artisan:
+sail php artisan --help
+sail php artisan make:controller Name_Controller
+sail php artisan route:list --help
+sail php artisan route:list
+
+# Rodando em outra maquina
+sudo apt update
+sudo apt remove composer -y
+sudo apt install composer -y
+docker compose version

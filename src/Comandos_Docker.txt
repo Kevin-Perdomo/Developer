@@ -1,4 +1,6 @@
- #Docker
+============================================================================================================================================
+
+#Docker
 
 sudo su
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -19,7 +21,8 @@ sudo apt-get install docker-compose-plugin
 docker compose version
 
 ============================================================================================================================================
-Comandos Úteis Docker Compose:
+
+#Comandos Úteis Docker Compose:
 
 docker compose build
 Executa build das imagens do projeto utilizando padrões do compose. Equivale ao comando docker build .
@@ -43,3 +46,5 @@ Remove os contêineres e demais artefatos de docker do projeto. Deve ser usado c
 
 Exemplo de aplicação python usando docker-compose:
 https://docs.docker.com/compose/gettingstarted/
+
+============================================================================================================================================

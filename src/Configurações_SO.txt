@@ -1,4 +1,4 @@
-Linux
+#Linux
 
 Linux Ubuntu LTS ou outra distro que permita o uso de docker
 Git (sudo apt install git)
@@ -9,7 +9,7 @@ VSCode (opcional)
 
 ============================================================================================================================================
 
-Windows
+#Windows
 
 Windows 10 ou superior com os seguintes aplicativos instalados via Microsoft Store:
 VSCode

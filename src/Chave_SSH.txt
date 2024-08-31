@@ -1,6 +1,6 @@
-Configurar Chave SSH na máquina e na conta do github
+#Configurar Chave SSH na máquina e na conta do github:
 
-* Acessar o terminal linux ou o app do linux no windows e executar:
+Acessar o terminal linux ou o app do linux no windows e executar:
 
 ssh-keygen -t ed25519 -C "seu e-mail entre aspas"
 git config --global user.name "seu nome completo entre aspas"

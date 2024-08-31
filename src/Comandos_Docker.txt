@@ -1,4 +1,4 @@
- Docker
+ #Docker
 
 sudo su
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -12,7 +12,6 @@ usermod -aG docker $USER
 docker run hello-world
 
 Docker compose
-
 sudo apt-get update
 sudo apt-get install docker-compose-plugin
 
@@ -20,7 +19,7 @@ sudo apt-get install docker-compose-plugin
 docker compose version
 
 ============================================================================================================================================
-Comandos Úteis Docker:
+Comandos Úteis Docker Compose:
 
 docker compose build
 Executa build das imagens do projeto utilizando padrões do compose. Equivale ao comando docker build .
@@ -35,8 +34,9 @@ serviços e libera o terminal para uso.
 
 docker compose stop
 Para a execução de todos os contêineres em execução dos serviços descritos no arquivo docker-compose.yml. Após o termo
-'stop' é possível indicar opcionalmente o nome de um serviço específico que deseja parar. Ex.: docker compose stop db vai
-parar apenas o serviço db.
+'stop' é possível indicar opcionalmente o nome de um serviço específico que deseja parar.
+Ex.: docker compose stop db
+vai parar apenas o serviço db.
 
 docker compose down
 Remove os contêineres e demais artefatos de docker do projeto. Deve ser usado com cuidado.

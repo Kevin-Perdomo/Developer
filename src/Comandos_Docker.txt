@@ -1,0 +1,45 @@
+ Docker
+
+sudo su
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+groupadd docker
+
+(substitua $USER no comando abaixo pelo login do usuário)
+usermod -aG docker $USER
+
+(reinicie o computador e execute o comando abaixo para testar o uso do docker)
+docker run hello-world
+
+Docker compose
+
+sudo apt-get update
+sudo apt-get install docker-compose-plugin
+
+(Execute o comando abaixo para checar a versão instalada)
+docker compose version
+
+============================================================================================================================================
+Comandos Úteis Docker:
+
+docker compose build
+Executa build das imagens do projeto utilizando padrões do compose. Equivale ao comando docker build .
+
+docker compose run --rm app bash
+Cria um container temporário do serviço chamado app e permite interação com o mesmo usando o terminal bash. Útil para
+criação de apps usando as dependências da imagem.
+
+docker compose up
+Inicia os contêineres dos serviços descritos no arquivo docker-compose.yml. Com a opção -d deixa de mostrar o log dos
+serviços e libera o terminal para uso.
+
+docker compose stop
+Para a execução de todos os contêineres em execução dos serviços descritos no arquivo docker-compose.yml. Após o termo
+'stop' é possível indicar opcionalmente o nome de um serviço específico que deseja parar. Ex.: docker compose stop db vai
+parar apenas o serviço db.
+
+docker compose down
+Remove os contêineres e demais artefatos de docker do projeto. Deve ser usado com cuidado.
+
+Exemplo de aplicação python usando docker-compose:
+https://docs.docker.com/compose/gettingstarted/

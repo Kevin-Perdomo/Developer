@@ -38,6 +38,5 @@ Execute os seguintes comandos para configurar o WSL:
 
 ```bash
 wsl --install
-wsl --set-default-version 2
 wsl --list --verbose
 ```

@@ -1,5 +1,9 @@
 # Configuração e Comandos Úteis do Docker e Docker Compose
 
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*puL5G2-WASlDv-gtb4Vykg.jpeg">
+</p>
+
 ## Docker
 
 ### 1. **Instalação do Docker:**

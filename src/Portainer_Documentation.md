@@ -1,6 +1,8 @@
 # Portainer 
 
-Este guia fornece instruções para criar e iniciar o Portainer utilizando Docker.
+<p align="center">
+  <img src="https://linuxiac.b-cdn.net/wp-content/uploads/2023/06/portainer.jpg">
+</p>
 
 ## Passos de Instalação
 

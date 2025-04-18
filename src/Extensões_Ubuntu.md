@@ -10,6 +10,7 @@ No Ubuntu, utilizei o **Extension Manager** para instalar duas extensões úteis
 
 1. **Clipboard History**
    - Permite acessar o histórico da área de transferência, semelhante ao atalho `Windows + V` no Windows.
+   - Após instalar a extensão, o atalho para acessar o histórico no Ubuntu é `Windows + Shift + V`.
    - Muito útil para recuperar textos copiados anteriormente sem precisar colar imediatamente.
 
 2. **Lockscreen Extension**

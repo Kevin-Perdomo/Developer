@@ -23,7 +23,7 @@ Permite acessar o histórico da área de transferência, semelhante ao `Windows 
 Facilita o bloqueio de tela pela interface, adicionando botão ou atalho visual.
 
 - Ideal para quem bloqueia a tela com frequência.
-- [Página oficial](https://extensions.gnome.org/extension/1319/lock-keys/)
+- [Página oficial](https://extensions.gnome.org/extension/7472/lockscreen-extension/)
 
 ### 3. User Themes
 

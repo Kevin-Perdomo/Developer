@@ -1,37 +1,72 @@
-# Instalação de Extensões via Extension Manager no Ubuntu
+# Guia de Extensões Essenciais para Ubuntu (GNOME)
 
 <p align="center">
-  <img src="https://mikesmithers.wordpress.com/wp-content/uploads/2023/11/activities_extension_manager.png?w=592">
+   <img src="https://mikesmithers.wordpress.com/wp-content/uploads/2023/11/activities_extension_manager.png?w=592" alt="Extension Manager no Ubuntu">
 </p>
 
-No Ubuntu, utilizei o **Extension Manager** para instalar quatro extensões úteis para melhorar a experiência no sistema:
+As extensões do GNOME permitem personalizar e aprimorar a experiência no Ubuntu, adicionando funcionalidades e recursos visuais ao sistema. O **Extension Manager** facilita a busca, instalação e gerenciamento dessas extensões de forma gráfica e intuitiva.
 
-## 🔧 Extensões Instaladas
+---
 
-1. **Clipboard History**
+## 🔧 Extensões Recomendadas
 
-   - Permite acessar o histórico da área de transferência, semelhante ao atalho `Windows + V` no Windows.
-   - Após instalar a extensão, o atalho para acessar o histórico no Ubuntu é `Ctrl` + `Alt` + `V`.
-   - Muito útil para recuperar textos copiados anteriormente sem precisar colar imediatamente.
+### 1. Clipboard History
 
-2. **Lockscreen Extension**
+Permite acessar o histórico da área de transferência, semelhante ao `Windows + V` no Windows.
 
-   - Facilita o bloqueio de tela diretamente pela interface, adicionando um atalho ou botão visual para isso.
-   - Ideal para quem utiliza frequentemente o bloqueio de tela e quer uma solução rápida e acessível.
+- **Atalho padrão:** `Ctrl` + `Alt` + `V`
+- Útil para recuperar textos copiados anteriormente.
+- [Página oficial](https://extensions.gnome.org/extension/4839/clipboard-history/)
 
-3. **User Themes**
+### 2. Lockscreen Extension
 
-   - Habilita a aplicação de temas criados por usuários para personalizar a aparência da interface do sistema GNOME Shell.
-   - Após a instalação, você pode usar ferramentas como o **GNOME Tweaks** para aplicar temas baixados de sites como o GNOME-Look.org.
+Facilita o bloqueio de tela pela interface, adicionando botão ou atalho visual.
 
-4. **Vitals**
-   - Exibe informações essenciais do sistema em tempo real, como temperatura da CPU, uso da RAM, velocidade das ventoinhas e outras métricas de desempenho.
-   - Essas informações são geralmente mostradas em um painel na barra superior, ajudando a monitorar a saúde do hardware do seu computador.
+- Ideal para quem bloqueia a tela com frequência.
+- [Página oficial](https://extensions.gnome.org/extension/1319/lock-keys/)
 
-## 🛠 Como instalar o Extension Manager
+### 3. User Themes
 
-Caso ainda não tenha o Extension Manager instalado, você pode instalá-lo via terminal com o comando:
+Permite aplicar temas personalizados ao GNOME Shell.
+
+- Use o **GNOME Tweaks** para gerenciar temas.
+- Baixe temas em: [GNOME-Look.org](https://www.gnome-look.org/)
+- [Página oficial](https://extensions.gnome.org/extension/19/user-themes/)
+
+### 4. Vitals
+
+Exibe informações do sistema em tempo real (CPU, RAM, temperatura, ventoinhas, etc).
+
+- Mostra as métricas na barra superior do GNOME.
+- [Página oficial](https://extensions.gnome.org/extension/1460/vitals/)
+
+---
+
+## 🛠 Como Instalar o Extension Manager
+
+Se ainda não possui o Extension Manager, instale pelo terminal:
 
 ```bash
-sudo apt install gnome-shell-extension-manager
+sudo apt update && sudo apt install gnome-shell-extension-manager
 ```
+
+Após a instalação, procure por "Extension Manager" no menu de aplicativos e explore as extensões disponíveis.
+
+---
+
+## 💡 Dicas e Observações
+
+- Algumas extensões podem exigir reinicialização da sessão do GNOME para funcionar corretamente.
+- Caso uma extensão não funcione, verifique se está compatível com a versão do seu GNOME Shell.
+- Para personalização avançada, instale também o **GNOME Tweaks**:
+  ```bash
+  sudo apt install gnome-tweaks
+  ```
+- Consulte sempre as páginas oficiais das extensões para instruções e atualizações.
+
+---
+
+## 📚 Referências
+
+- [Site oficial das extensões GNOME](https://extensions.gnome.org/)
+- [Documentação do GNOME](https://help.gnome.org/users/gnome-help/stable/)

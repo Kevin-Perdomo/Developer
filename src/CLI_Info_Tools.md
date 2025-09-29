@@ -11,10 +11,13 @@ Ferramentas de linha de comando para exibir informações detalhadas do sistema 
 ## **Winfetch** no Windows via Chocolatey
 
 Instale o Winfetch:
+
 ```bash
 choco install winfetch -y
 ```
+
 Execute:
+
 ```bash
 winfetch.ps1
 ```
@@ -22,16 +25,19 @@ winfetch.ps1
 ## **Neofetch** no Linux via APT
 
 Atualize os pacotes:
+
 ```bash
 sudo apt update
 ```
 
 Instale o Neofetch:
+
 ```bash
 sudo apt install neofetch
 ```
 
 Execute o Neofetch:
+
 ```bash
 neofetch
 ```
@@ -41,11 +47,13 @@ neofetch
 O Fastfetch é uma alternativa mais rápida ao Neofetch, escrita em C.
 
 ### 1. Instalar dependências
+
 ```bash
 sudo apt update && sudo apt install -y build-essential cmake make gcc pkg-config git
 ```
 
 ### 2. Clonar e compilar
+
 ```bash
 git clone https://github.com/fastfetch-cli/fastfetch.git ~/fastfetch
 cd ~/fastfetch
@@ -56,6 +64,7 @@ sudo make install
 ```
 
 ### 3. Testar
+
 ```bash
 fastfetch
 ```
@@ -65,32 +74,50 @@ fastfetch
 O Onefetch exibe informações de repositórios Git de forma visual e detalhada.
 
 ### 1. Instalar Rust via rustup
+
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
 ```
 
 ### 2. Instalar Onefetch
+
 ```bash
 cargo install onefetch
 ```
 
 ### 3. Garantir que cargo/bin está no PATH do zsh
+
 ```bash
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
 ### 4. Atalho opcional para rodar em qualquer repositório Git
+
 ```bash
 echo 'alias gitinfo="onefetch"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
 ### 5. Testar dentro de um repositório Git
+
+Navegue até o diretório do seu repositório Git:
+
 ```bash
-# cd /caminho/do/repositorio
-# onefetch  ou gitinfo
+cd /caminho/do/repositorio
+```
+
+Execute o Onefetch diretamente:
+
+```bash
+onefetch
+```
+
+Ou utilize o atalho criado (`gitinfo`):
+
+```bash
+gitinfo
 ```
 
 ---

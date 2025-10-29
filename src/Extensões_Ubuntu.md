@@ -64,6 +64,22 @@ Após a instalação, procure por "Extension Manager" no menu de aplicativos e e
   ```
 - Consulte sempre as páginas oficiais das extensões para instruções e atualizações.
 
+## 🎤 Problema do Microfone em Videochamadas (Chrome/Chromium)
+
+### Problema Identificado
+Durante videochamadas no Chrome/Chromium, o volume do microfone diminui automaticamente, causando problemas de áudio.
+
+### Solução
+1. Abra o Chrome/Chromium e acesse: `chrome://flags/`
+2. Procure pela configuração: **"Allow WebRTC to adjust the input volume"**
+3. Altere de `Default` para `Disabled`
+4. Reinicie o navegador
+
+### Descrição da Flag
+> Allow the Audio Processing Module in WebRTC to adjust the input volume during a real-time call. Disable if microphone muting or clipping issues are observed when the browser is running and used for a real-time call. This flag is experimental and may be removed at any time. – Mac, Windows, Linux
+
+**Resultado:** O volume do microfone permanece fixo na configuração definida pelo usuário, sem ajustes automáticos durante as chamadas.
+
 ---
 
 ## 📚 Referências

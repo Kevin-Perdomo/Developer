@@ -15,32 +15,20 @@ Set-Location "Seu diretório"; .\speedtest
 
 ## Linux
 
-### 1. **Atualize o sistema** com o comando abaixo:
+### 1. **Atualize o sistema**:
 
 ```bash
 sudo apt update
 ```
 
-### 2. **Instale o Speedtest CLI**:
+### 2. **Instale o speedtest cli by Ookla**:
 
 ```bash
-sudo apt install speedtest-cli
+sudo snap install speedtest
 ```
 
-### 3. **Execute o Speedtest** com um dos comandos abaixo:
-
-Para uma saída completa:
+### 3. **Execute o Speedtest**:
 
 ```bash
 speedtest
 ```
-
-Para uma saída simplificada:
-
-```bash
-speedtest --simple
-```
-
----
-
-Após seguir as instruções, o Speedtest estará configurado para medir a velocidade de internet na sua máquina pelo terminal.
